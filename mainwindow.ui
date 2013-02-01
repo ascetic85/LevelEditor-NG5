@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>685</width>
+    <height>430</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>4</number>
+      </property>
+      <widget class="LevelEditor" name="levelEditor">
+       <attribute name="title">
+        <string>Level Editor</string>
+       </attribute>
+      </widget>
+      <widget class="CustomProperties" name="customProperties">
+       <attribute name="title">
+        <string>Custom Properties</string>
+       </attribute>
+      </widget>
+      <widget class="SupportCode" name="supporingCode">
+       <attribute name="title">
+        <string>Supporting Code</string>
+       </attribute>
+      </widget>
+      <widget class="Documentation" name="documentation">
+       <attribute name="title">
+        <string>Documentation</string>
+       </attribute>
+      </widget>
+      <widget class="Messages" name="messages">
+       <attribute name="title">
+        <string>Messages</string>
+       </attribute>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>685</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>LevelEditor</class>
+   <extends>QWidget</extends>
+   <header>leveleditor.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>CustomProperties</class>
+   <extends>QWidget</extends>
+   <header>customproperties.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>SupportCode</class>
+   <extends>QWidget</extends>
+   <header>supportcode.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>Documentation</class>
+   <extends>QWidget</extends>
+   <header>documentation.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>Messages</class>
+   <extends>QWidget</extends>
+   <header>messages.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
